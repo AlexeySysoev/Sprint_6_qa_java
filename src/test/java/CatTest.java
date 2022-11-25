@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 import java.util.List;
-public class CatTests {
+public class CatTest {
     Feline feline = new Feline();
     @Test
     //Метод возвращает нужный звук
