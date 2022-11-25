@@ -26,6 +26,7 @@ public class LionDoesHaveManeParamTest {
         };
     }
     @Test
+    //Проверяем, что метод doesHaveMane ставит правильный флаг при указании пола животного
     public void lionDoesHaveManeCheck() throws Exception{
         Lion lion = new Lion(feline, sex);
         Assert.assertEquals(expected, lion.doesHaveMane());
