@@ -1,4 +1,4 @@
-package FelineTests;
+package felinetests;
 import com.example.Feline;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class FelineParamTest {
     }
     @Test
     //Проверяем, что логика метода GetKittens с параметром возвращает правильное значение
-    public void FelineGetKittensWithParameterReturnRightValue(){
+    public void felineGetKittensWithParameterReturnRightValue(){
         Feline feline = new Feline();
         Assert.assertEquals(expected, feline.getKittens(kittensCount));
     }

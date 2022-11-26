@@ -1,4 +1,4 @@
-package FelineTests;
+package felinetests;
 import com.example.Feline;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,7 +13,7 @@ public class FelineTest {
     }
     @Test
     //ПРоверяем, что метод GetKittens без параметра возвращает 1
-    public void FelineGetKittensCheck(){
+    public void felineGetKittensCheck(){
         int kittensCount = 1;
         Assert.assertEquals(kittensCount, feline.getKittens());
     }

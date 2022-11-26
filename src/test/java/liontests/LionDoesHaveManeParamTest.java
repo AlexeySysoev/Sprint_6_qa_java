@@ -1,4 +1,5 @@
-package LionTests;
+package liontests;
+import com.example.Feline;
 import com.example.Lion;
 import com.example.Predator;
 import org.junit.Assert;
@@ -13,7 +14,7 @@ public class LionDoesHaveManeParamTest {
     public String sex;
     @Parameterized.Parameter(1)
     public boolean expected;
-    Predator feline;
+    Predator feline = new Feline();
     @Before
     public void setUp(){
         MockitoAnnotations.openMocks(this);

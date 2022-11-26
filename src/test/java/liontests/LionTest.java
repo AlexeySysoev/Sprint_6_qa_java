@@ -1,4 +1,4 @@
-package LionTests;
+package liontests;
 import com.example.Feline;
 import com.example.Lion;
 import com.example.Predator;
@@ -26,7 +26,7 @@ public class LionTest {
     public void lionExceptionIsRunning() {
         String exceptionExpectedMessage = "Используйте допустимые значения пола животного - самец или самка";
         Exception trowException = Assert.assertThrows(Exception.class,() -> new Lion(feline, "Неизвестно"));
-        Assert.assertTrue(trowException.getMessage() == exceptionExpectedMessage);
+        Assert.assertEquals(trowException.getMessage(), exceptionExpectedMessage);
     }
     @Test
     //Проверяем, что метод getFood вызывает обращение к методу eatMeat
